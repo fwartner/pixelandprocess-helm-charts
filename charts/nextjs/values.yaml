@@ -7,6 +7,13 @@ image:
 
 imagePullSecrets: []
 
+# Every image built via this chart's CI convention (docker/build-push-action
+# with platforms: linux/amd64) is amd64-only. The cluster mixes arm64 and
+# amd64 nodes, so without this pin pods land on arm64 at random and hit
+# ImagePullBackOff ("no match for platform in manifest").
+nodeSelector:
+  kubernetes.io/arch: amd64
+
 service:
   type: ClusterIP
   port: 3000
