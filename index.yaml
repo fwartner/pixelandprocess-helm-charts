@@ -19,4 +19,14 @@ entries:
     urls:
     - https://github.com/Pixel-Process-UG/pixelandprocess-helm-charts/releases/download/laravel-0.2.0/laravel-0.2.0.tgz
     version: 0.2.0
-generated: "2026-03-31T11:18:13.386505854Z"
+  nextjs:
+  - apiVersion: v2
+    appVersion: "14.0"
+    created: "2026-08-07T12:24:46.179102093Z"
+    description: Generic Next.js application chart
+    digest: d3955d515243c2eef6489fead017e7470bedbfb16e7560309c21a20cf2961da2
+    name: nextjs
+    urls:
+    - https://github.com/Pixel-Process-UG/pixelandprocess-helm-charts/releases/download/nextjs-0.1.0/nextjs-0.1.0.tgz
+    version: 0.1.0
+generated: "2026-08-07T12:24:46.179116891Z"
